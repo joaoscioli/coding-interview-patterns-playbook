@@ -8,6 +8,22 @@ designed to build strong **problem-solving and interview reasoning skills**.
 
 This project focuses on **how to think**, not just how to code.
 
+## Portfolio Positioning
+
+This repository is maintained as a practical interview playbook. It is designed
+to show repeatable problem-solving structure: identifying patterns, explaining
+intuition, choosing trade-offs, analyzing complexity, and writing readable Java
+solutions.
+
+It complements my backend portfolio by demonstrating fundamentals and interview
+communication, while production-oriented engineering is demonstrated in
+application repositories such as REST APIs, Spring Boot services, tests,
+documentation, and CI/CD pipelines.
+
+**Repository type:** coding interview playbook  
+**Primary focus:** Java, algorithms, explanation quality  
+**Portfolio role:** interview readiness and fundamentals support
+
 ---
 
 ## 📌 Solution Template
