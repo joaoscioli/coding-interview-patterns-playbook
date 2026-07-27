@@ -1,130 +1,136 @@
 # Coding Interview Patterns Playbook
+
 ![algorithm](https://github.com/user-attachments/assets/38604e1b-e84e-4b96-874e-625ab3893e12)
 
 ### Algorithmic Thinking for Software Engineering Interviews
 
-A **pattern-based study repository** dedicated to **algorithms and data structures**,
-designed to build strong **problem-solving and interview reasoning skills**.
+A pattern-based Java repository for practicing algorithms, data structures, problem-solving, and interview communication.
 
-This project focuses on **how to think**, not just how to code.
+The goal is not to memorize isolated problems. Each solution documents how to recognize the pattern, explain the approach, evaluate trade-offs, analyze complexity, and produce readable code under interview conditions.
 
 ## Portfolio Positioning
 
-This repository is maintained as a practical interview playbook. It is designed
-to show repeatable problem-solving structure: identifying patterns, explaining
-intuition, choosing trade-offs, analyzing complexity, and writing readable Java
-solutions.
-
-It complements my backend portfolio by demonstrating fundamentals and interview
-communication, while production-oriented engineering is demonstrated in
-application repositories such as REST APIs, Spring Boot services, tests,
-documentation, and CI/CD pipelines.
+This repository complements my backend portfolio by demonstrating computer science fundamentals and technical communication. Production-oriented engineering is demonstrated separately through REST APIs, Spring Boot services, automated tests, documentation, and CI/CD projects.
 
 **Repository type:** coding interview playbook  
-**Primary focus:** Java, algorithms, explanation quality  
-**Portfolio role:** interview readiness and fundamentals support
+**Primary language:** Java 21  
+**Build:** Maven  
+**Tests:** JUnit 5  
+**CI:** GitHub Actions
 
----
+## Current Progress
 
-## 📌 Solution Template
+| Phase | Pattern | Solutions | Tests | Status |
+|---|---|---:|---:|---|
+| 1 | Sliding Window | 1 | 3 | In progress |
+| 1 | Two Pointers | 1 | 3 | In progress |
+| 1 | Arrays and Hashing | 0 | 0 | Planned |
+| 1 | Binary Search | 0 | 0 | Planned |
+| 1 | Stack | 0 | 0 | Planned |
+| 1 | Linked List | 0 | 0 | Planned |
+| 1 | Tree BFS and DFS | 0 | 0 | Planned |
 
-Every problem follows the same structure to mirror real interview explanations:
-- **Problem** – concise problem description
-- **Pattern** – the algorithmic pattern applied
-- **Intuition** – how to recognize the pattern
-- **Approach** – step-by-step reasoning
-- **Complexity** – time and space analysis
-- **Code** – clean, interview-ready implementation
-This format prioritizes clarity of thought over clever tricks.
+## Implemented Problems
 
----
+### Sliding Window
 
-## ☕ Primary Language
-- Java (main language)
-  
-Focus areas:
-- Algorithms
-- Data Structures
-- Readable, maintainable, interview-style code
-No frameworks. No shortcuts. Fundamentals only.
+- `MaximumSumSubarray` — maximum sum of a contiguous subarray with fixed size; `O(n)` time and `O(1)` space.
 
----
+### Two Pointers
 
-## 🧪 Study Philosophy
-````
-Don’t memorize problems.
-Learn to recognize patterns.
-````
-The goal is to reach a point where you can confidently say:
+- `PairWithTargetSum` — finds two indexes in a sorted array whose values match a target sum; `O(n)` time and `O(1)` space.
 
-- “This is a Sliding Window problem.”
-- “This requires BFS, not DFS.”
-- “This problem needs Dynamic Programming.”
+## Solution Standard
 
-This mindset is what interviewers look for.
+Every problem should include:
 
----
+1. A concise problem statement.
+2. The algorithmic pattern.
+3. Recognition clues.
+4. Brute-force reasoning when relevant.
+5. An optimized approach.
+6. Time and space complexity.
+7. Edge cases.
+8. Readable Java implementation.
+9. Automated tests.
+10. A short interview-ready explanation.
 
-## 🎯 Purpose
-
-Coding interviews are not about memorizing solutions.
-
-They are about:
-- Recognizing algorithmic patterns
-- Explaining your reasoning clearly
-- Understanding trade-offs
-- Writing clean, efficient code under pressure
-
-This repository exists to practice **interview-ready algorithmic thinking** using a
-structured, repeatable approach.
-
----
-
-## 🚀 How to Use This Repository
-- Study one pattern at a time
-- Re-implement solutions without looking
-- Practice explaining your approach out loud
-- Focus on reasoning, not speed
-- Treat every problem as a mock interview
-This repository is meant to be used actively, not passively read.
-
----
-
-## 📚 References & Inspiration
-
-This repository is primarily inspired by the following books:
-
-- Coding Interview Patterns: Nail Your Next Coding Interview (2024) | Xu A.
-  - A pattern-based approach to solving coding interview problems.
-
-- Silicon Valley Python Engineer Interview Guide: Data Structure, Algorithm, and System Design | Jianfeng Ren, Andric Li
-  - Interview mindset, algorithmic depth, and system design foundations.
-
-Concepts and patterns are adapted and implemented in Java, with a strong emphasis on
-interview communication and reasoning.
-
----
-
-## 📍 Disclaimer
-
-This repository is a personal study playbook for algorithm and interview preparation.
-It reflects my learning journey and interpretation of common interview patterns.
-
-Solutions are written for educational and interview preparation purposes only.
----
-
-## 🧠 Repository Structure
-
-Problems are organized by **algorithmic patterns**, not by platform or problem IDs.
+## Repository Structure
 
 ```text
-patterns/
-├── sliding_window/
-├── two_pointers/
-├── fast_slow_pointers/
-├── merge_intervals/
-├── tree_dfs/
-├── tree_bfs/
-├── heap/
-├── graph/
-└── dynamic_programming/
+src/
+├── main/java/io/pixelvoid/interviews/
+│   ├── slidingwindow/
+│   └── twopointers/
+└── test/java/io/pixelvoid/interviews/
+    ├── slidingwindow/
+    └── twopointers/
+```
+
+The project is organized by patterns rather than by platform or problem ID.
+
+## Roadmap
+
+### Phase 1 — Core Interview Foundations
+
+Target: 15–20 well-documented problems.
+
+- Arrays and Hashing
+- Two Pointers
+- Sliding Window
+- Binary Search
+- Stack
+- Linked List
+- Tree BFS and DFS
+
+### Phase 2 — Intermediate Patterns
+
+- Heap and Priority Queue
+- Graph BFS and DFS
+- Topological Sort
+- Intervals
+- Prefix Sum
+- Backtracking
+- Monotonic Stack
+
+### Phase 3 — Advanced Topics
+
+- Dynamic Programming
+- Union Find
+- Trie
+- Shortest Paths
+- Advanced graph problems
+- Introductory system design exercises
+
+## Running the Project
+
+Requirements:
+
+- Java 21
+- Maven 3.9+
+
+Run all tests:
+
+```bash
+mvn test
+```
+
+## Study Method
+
+1. Study one pattern at a time.
+2. Solve without viewing the final implementation.
+3. Explain the solution aloud.
+4. Compare brute-force and optimized approaches.
+5. Reimplement the problem after spaced intervals.
+6. Treat each exercise as a mock interview.
+
+## References and Inspiration
+
+- *Coding Interview Patterns: Nail Your Next Coding Interview* — Xu A.
+- *Silicon Valley Python Engineer Interview Guide: Data Structure, Algorithm, and System Design* — Jianfeng Ren and Andric Li.
+
+Concepts are studied and reimplemented in Java with emphasis on reasoning and interview communication.
+
+## Disclaimer
+
+This is a personal educational repository. Solutions reflect my study process and interpretation of common interview patterns.
